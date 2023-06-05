@@ -17,6 +17,7 @@ export default function Login() {
         if (state.auth_user !== undefined) {
             navigate('/')
         }
+        window.history.pushState(null, null, "login");
     }, [])
 
     const navigate = useNavigate()
