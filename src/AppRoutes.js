@@ -15,7 +15,7 @@ function AppRoutes() {
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
         <Router>
-          {window.location.pathname != '/login' && <SideNav />}
+          {isAuthenticated && <SideNav />}
           <Routes>
             <Route path="*" element={isAuthenticated ? <h1>NotFound</h1> : <Login />} />
             <Route path="/" element={isAuthenticated ? <HomePage /> : <Login />} />
