@@ -19,13 +19,11 @@ export default function Login() {
         }
         window.history.pushState(null, null, "login");
     }, [])
-
     const navigate = useNavigate()
 
     const showModalForget = e => {
         document.querySelector('.modal').classList.toggle('is-active')
     }
-
     const loginToPainel = e => {
         removeErrorInputText('email')
         removeErrorInputText('password')

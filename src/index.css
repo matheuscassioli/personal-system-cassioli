@@ -1,16 +1,21 @@
+:root {
+  --blackTheme: #000000;
+  --purpleHeavy: #3E065F;
+  --purpleMiddle: #3E065F;
+  --purpleSweet: #3E065F;
+  --whiteTheme: #ffffff;
+  --greyTheme: #bbbbbb;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   width: 100%;
   height: 100vh;
+  color: var(--whiteTheme) !important;
 }
 
 html {
-  overflow: auto;
+  overflow: auto !important;
 }
 
 code {
