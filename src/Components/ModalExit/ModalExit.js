@@ -26,7 +26,7 @@ export default function ModalExit({ data }) {
             <div className="modal-content is-relative">
                 {data}
                 <button className="modal-close" aria-label="close"></button>
-                <div className='buttons'>
+                <div className='buttons mt-4'>
                     <button onClick={(e) => logout(e)} className='button is-dark is-small'>Sim</button>
                     <button onClick={(e) => closeModal(e)} className='button is-info is-small is-light'>Fechar</button>
                 </div>

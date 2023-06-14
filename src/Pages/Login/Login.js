@@ -60,7 +60,7 @@ export default function Login() {
         <div className="background-login">
             <ToastContainer />
             <ModalForgetPassword />
-            <div className='container'>
+            {store.getState().auth_user == undefined && <div className='container'>
                 <div className='container_left'>
                     <div className='left_card p-5 is-relative'>
                         <div className="dica-login" data-tooltip="Email: user@user.com - Senha: user321">Dica <BsExclamationDiamondFill /></div>
@@ -91,7 +91,7 @@ export default function Login() {
                 <div className='container_right package-flex'>
                     <ImageSlider />
                 </div>
-            </div>
+            </div>}
         </div>
     )
 }

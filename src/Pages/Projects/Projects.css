@@ -1,0 +1,29 @@
+.projects-container {
+    background-color: var(--purpleSweet);
+    width: 100%;
+    cursor: url(http://www.rw-designer.com/cursor-extern.php?id=2839) !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.card-img {
+    width: 350px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.card-img:hover {
+    box-shadow: rgba(255, 252, 252, 0.25) 0px 25px 50px -12px;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.025);
+    transition: 0.18s;
+}

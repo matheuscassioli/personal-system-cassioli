@@ -4,8 +4,9 @@ import { Provider } from 'react-redux';
 import { PersistGate } from 'redux-persist/integration/react'
 import { store, persistor } from "./Store/store"
 import { checkAutenticated } from "./HelpersFunctions/HelpersFunctions"
-import SideNav from './Components/SideNav/SideNav';
 import HomePage from './Pages/HomePage/HomePage';
+import NotFound from './Pages/NotFound/NotFound';
+import Projects from './Pages/Projects/Projects';
 
 function AppRoutes() {
 
@@ -14,10 +15,11 @@ function AppRoutes() {
   return (
     <Provider store={store}>
       <PersistGate loading={null} persistor={persistor}>
-        <Router> 
+        <Router>
           <Routes>
-            <Route path="*" element={isAuthenticated ? <h1>NotFound</h1> : <Login />} />
+            <Route path="*" element={isAuthenticated ? <NotFound /> : <Login />} />
             <Route path="/" element={isAuthenticated ? <HomePage /> : <Login />} />
+            <Route path="/projects" element={isAuthenticated ? <Projects /> : <Login />} />
             <Route path="/login" element={<Login />} />
           </Routes>
         </Router>

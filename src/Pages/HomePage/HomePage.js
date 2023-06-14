@@ -5,6 +5,7 @@ import { MdExitToApp } from 'react-icons/md'
 import ModalExit from "../../Components/ModalExit/ModalExit"
 import perfil from "./minhafoto.png"
 import Loader from '../../Components/Loader/Loader';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function HomePage() {
@@ -16,6 +17,7 @@ export default function HomePage() {
     }, [])
 
     const [showInfo, setShowInfo] = useState(false)
+    const navigate = useNavigate()
 
     const showModalExit = e => {
         document.querySelector('.modal').classList.toggle('is-active')
@@ -37,16 +39,18 @@ export default function HomePage() {
                     repeat={1}
                 />
 
-                {showInfo ? <div className='apresentation-container'>
+                {showInfo ? <div className='apresentation-container mt-4'>
                     <div className='apresentation-text'>
                         <p>Olá, me chamo Matheus Cassioli, formado em Análise e desenvolvimento de sistemas. Atualmente desenvolvedor front-end na Penso tecnologia, empresa na qual oferece diversas soluções de TI, como armazenamento em nuvem, serviços de email Zimbra, back-ups e etc.</p>
 
                         <p>Montei esse repositório para sintetizar tudo o que venho desenvolvendo, tanto no meu dia-a-dia no trabalho, como em cursos ao logo da minha jornada.</p>
 
                         <p>A principal idéia desse espaço é manter salvo tudo o que achei relevante dentre todos os projetos que ja realizei, é importante salientar que trabalho principalmente com ReactJs, então muita coisa por aqui vai ser em cima dessa biblioteca Javascipt, também renderizações de dados de API, animações em css, bibliotecas auxiliares para react e muito mais :) </p>
+
+                        <button onClick={(e) => navigate('/projects')} className='button is-dark button-tour'>Bora fazer um tour por aqui? </button>
                     </div>
                     <div className='apresentation-picture'>
-                        <img src={perfil} alt="Minha foto de perfil - Matheus Cassioli" />
+                        <img src={perfil} className='vertical-img' alt="Minha foto de perfil - Matheus Cassioli" />
                     </div>
                 </div> : <Loader className="loader-home" />}
             </div>
