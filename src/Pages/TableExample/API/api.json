@@ -1,0 +1,49 @@
+{
+    "data": {
+      "headers": ["projeto","descricao"],
+      "perPage": 2,
+      "data": [
+        {
+          "id": 1,
+          "titulo": "Cine alura",
+          "descricao": "O Cine Alura é um projeto de front-end que utiliza as rotas do React e o Redux para compartilhar informações. O objetivo é criar uma experiência de usuário fluída e interativa em um aplicativo de cinema. As rotas do React permitem a navegação entre diferentes páginas e componentes, enquanto o Redux é usado para armazenar e compartilhar o estado global do aplicativo. Isso proporciona uma estrutura organizada e eficiente, permitindo a fácil acessibilidade às informações e personalização da experiência do usuário."
+        },
+        {
+          "id": 2,
+          "titulo": "Alura Cases - Next.js",
+          "descricao": "Meu primeiro projeto em Next.js é uma experiência de aprendizado fundamental, o projeto é simples, mas abrange diferentes formas de renderização disponíveis no Next.js. O objetivo é familiarizar-se com a renderização do lado do servidor (Server-Side Rendering - SSR), renderização estática (Static Rendering) e renderização do lado do cliente (Client-Side Rendering - CSR). Essas técnicas de renderização são essenciais para otimizar o desempenho e a experiência do usuário em aplicações web. Através desse projeto, será possível compreender como cada uma dessas abordagens funciona e como aplicá-las de forma adequada em diferentes cenários."
+        },
+        {
+          "id": 3,
+          "titulo": "Apresentação - React Router DOM v6",
+          "descricao": "Meu projeto com a lib React Router DOM me permitiu explorar o uso de rotas no React. Foi uma oportunidade para entender e implementar uma página padrão de 'not found' para direcionar os usuários a URLs inválidas. Além disso, pude compartilhar alguns dos meus projetos com a comunidade, permitindo que eles fossem visualizados de forma fácil e organizada. Também foi possível trabalhar com animações entre rotas, criando um efeito suave e agradável durante a transição entre as páginas. Essa experiência me proporcionou um melhor entendimento sobre o funcionamento das rotas no React e como melhorar a experiência de navegação dos usuários."
+        },
+        {
+          "id": 4,
+          "titulo": "Alura Space",
+          "descricao": "O Alura Space é uma landing page responsiva com uma interface amigável e efeitos visuais interessantes no CSS. O design adaptativo garante uma experiência consistente em diferentes dispositivos, enquanto os efeitos criativos adicionam um toque interativo e atraente à página. A navegação é simplificada, permitindo que os usuários encontrem facilmente as informações desejadas."
+        },
+        {
+          "id": 5,
+          "titulo": "Alura Games - Challenge",
+          "descricao": "O Alura Games consistiu em um desafio de desenvolvimento front-end proposto pela Alura. O objetivo era criar um projeto em React, baseado no design disponibilizado no Figma, seguindo práticas de componentização, renderização dinâmica e reutilização de componentes. Além disso, era necessário fornecer uma interface amigável e responsiva para dispositivos de diferentes tamanhos."
+        },
+        {
+            "id": 6,
+            "titulo": "Alurinha - Flex-box",
+            "descricao": "O projeto Alurinha Flex-Box foi uma iniciativa que visava explorar a principal propriedade do CSS, o Flexbox, para criar um layout flexível e responsivo. Focando na simplicidade, o projeto utilizou apenas HTML e CSS para construir uma interface elegante e interativa. A proposta central do Alurinha Flex-Box era demonstrar como o Flexbox pode ser empregado de forma eficiente na criação de layouts modernos, proporcionando flexibilidade e adaptabilidade em diversos dispositivos."
+        },
+        {
+            "id": 7,
+            "titulo": "Penso Tecnologia - Processo seletivo",
+            "descricao": "O projeto desenvolvido para o processo seletivo da minha empresa atual teve como objetivo criar um layout atraente e responsivo, aplicando os conceitos de UI (User Interface) e UX (User Experience). Utilizando a tecnologia React JS, integrei uma API externa para consumir dados e, em seguida, renderizei esses dados no frontend em formato de lista. A proposta foi demonstrar habilidades de desenvolvimento frontend, combinando design visual agradável com interação fluida e uma abordagem de usabilidade centrada no usuário."
+        },
+        {
+            "id": 8,
+            "titulo": "Consumindo API do via CEP",
+            "descricao": "O projeto Viacep consiste em um exercício introdutório de consumo de API. Nele, é realizado o envio de uma requisição com um CEP como parâmetro para a API do ViaCEP. Em resposta, são retornados os demais dados relacionados ao CEP, os quais são preenchidos automaticamente nos campos do frontend. Esse projeto tem como objetivo fornecer uma compreensão inicial sobre o conceito de requisição de dados por meio de uma API, sendo uma ótima oportunidade para quem está começando a se familiarizar com esse processo."
+
+        }]
+    }}
+
+            
